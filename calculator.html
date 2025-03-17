@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연율포계산기</title>
+
+    <link rel="stylesheet" type="text/css" href="calculator.css">
+    <script src="calculator.js"></script>
+
+</head>
+<body>
+    <h1>연율포계산기</h1>
+    <form>
+        서로의 패 + 필드의 카드 합계
+        <br>
+        <input type="number" id="sum" required>
+        <br><br>
+        투입한 융합 몬스터의 레벨 (모두 선택)
+        <br>
+        <div id="flevel">
+            <input type="checkbox" name="flevel" value="f1" id="f1" checked />
+            <label for="f1">1</label>
+            <input type="checkbox" name="flevel" value="f2" id="f2" checked />
+            <label for="f2">2</label>
+            <input type="checkbox" name="flevel" value="f3" id="f3" checked />
+            <label for="f3">3</label>
+            <input type="checkbox" name="flevel" value="f4" id="f4" checked />
+            <label for="f4">4</label>
+            <input type="checkbox" name="flevel" value="f5" id="f5" checked />
+            <label for="f5">5</label>
+            <input type="checkbox" name="flevel" value="f6" id="f6" checked />
+            <label for="f6">6</label>
+            <input type="checkbox" name="flevel" value="f7" id="f7"/>
+            <label for="f7">7</label>
+            <input type="checkbox" name="flevel" value="f8" id="f8"/>
+            <label for="f8">8</label>
+        </div>
+        <br>
+        투입한 엑시즈 몬스터의 랭크 (모두 선택)
+        <br>
+        <div id="xrank">
+            <input type="checkbox" name="xrank" value="x1" id="x1"/>
+            <label for="x1">1</label>
+            <input type="checkbox" name="xrank" value="x2" id="x2"/>
+            <label for="x2">2</label>
+            <input type="checkbox" name="xrank" value="x3" id="x3" checked />
+            <label for="x3">3</label>
+            <input type="checkbox" name="xrank" value="x4" id="x4" checked />
+            <label for="x4">4</label>
+            <input type="checkbox" name="xrank" value="x5" id="x5" checked />
+            <label for="x5">5</label>
+            <input type="checkbox" name="xrank" value="x6" id="x6" checked />
+            <label for="x6">6</label>
+            <input type="checkbox" name="xrank" value="x7" id="x7"/>
+            <label for="x7">7</label>
+            <input type="checkbox" name="xrank" value="x8" id="x8"/>
+            <label for="x8">8</label>
+        </div>
+        <br>
+        <button>계산하기</button>
+    </form>
+    <br><br>
+    <div id="result">
+        저격 가능 레벨: <div id="level"></div>
+    </div>
+</body>
